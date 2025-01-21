@@ -27,3 +27,7 @@
       |                     | 123456    | E-mail inválido. | E-mail vazio    |
       | eduardo@qazando.com | 000       | Senha inválida.  | Senha inválida  |
       | eduardo@qazando.com |           | Senha inválida.  | Senha vazia     |
+
+   @login-teste
+    Cenário: Login com sucesso
+      Então mostre a mensagem de sucesso

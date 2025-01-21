@@ -52,4 +52,9 @@ public class LoginSteps extends RunCucumber {
         loginPage.verificaLoginSucesso();
     }
 
+    @Então("^mostre a mensagem de sucesso")
+    public void mostre_a_mensagem_de_sucesso() {
+        System.out.println("Deu certo!");
+    }
+
 }
