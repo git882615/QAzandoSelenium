@@ -49,8 +49,8 @@ jobs:
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_COLOR: ${{ job.status }} 
-          SLACK_MESSAGE:  'TESTE EXECUTADO com sucesso!' 
-          SLACK_USERNAME: ELIAKIM
+          SLACK_MESSAGE:  'TESTE EXECUTADO com SUCESSO!' :marca_de_verificação_branca:
+          SLACK_USERNAME: GITHUB
 
       - name: Enviar notificação para o Slack - ERRO
         uses: rtCamp/action-slack-notify@v2
@@ -58,5 +58,5 @@ jobs:
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_COLOR: ${{ job.status }} 
-          SLACK_MESSAGE:  'TESTE EXECUTADO com erro!' 
-          SLACK_USERNAME: ELIAKIM          
+          SLACK_MESSAGE:  'TESTE EXECUTADO com ERRO!' :x_vermelho:
+          SLACK_USERNAME: GITHUB          
